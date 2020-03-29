@@ -222,7 +222,7 @@ bindsym XF86AudioMute exec  ((mplayer /usr/share/sounds/Pop/stereo/action/audio-
 
 exec brave-browser
 exec urxvtcd
-exec_always feh --bg-scale /media/MOON/chps/Pictures/WPPs/204550-new-cosmic-background-1920x1080.jpg
+exec_always feh --bg-scale ~/.config/wp
 exec_always copyq
 exec compton
 exec ulauncher
