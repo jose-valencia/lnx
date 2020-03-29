@@ -1,0 +1,53 @@
+!name
+!urxvt*termName:        terminal 
+!fonts
+URxvt.font: xft:Ubuntu Mono:size=20
+URxvt*boldFont: xft:Ubuntu Mono:style=Bold:size=20
+URxvt.letterSpace: -2
+
+!colors
+URxvt.depth: 32
+URxvt.background: [85]#0D121F
+URxvt*foreground: White
+URxvt*colorUL: yellow
+URxvt*underlineColor: yellow
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+!scrollBar colors
+URxvt.troughColor:  #151935 
+URxvt.scrollColor:  [50]#565A68
+URxvt*color0:       #303455
+!URxvt*color1:      #9e1828
+!URxvt*color2:      #aece92
+!URxvt*color3:      #968a38
+URxvt*color4:       #698998
+!URxvt*color5:      #963c59
+!URxvt*color6:      #418179
+!URxvt*color7:      #bebebe
+!URxvt*color8:      #666666
+!URxvt*color9:      #cf6171
+!URxvt*color10:     #c5f779
+!URxvt*color11:     #fff796
+URxvt*color12:      #B5BD68
+!URxvt*color13:     #cf9ebe
+!URxvt*color14:     #71bebe
+!URxvt*color15:     #ffffff
+
+URxvt*color16:     #F1C50D
+!scrollBar
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: rxvt
+
+!disables Ctrl+Shift IsoMode
+URxvt.iso14755:         False
+
+!perl extensions
+URxvt.perl-ext-common:  resize-font,eval
+
+!URxvt.keysym.C-Down:  resize-font:smaller
+!URxvt.keysym.C-Up:    resize-font:bigger
+!
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
