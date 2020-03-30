@@ -132,3 +132,20 @@ class fd_prev(Command):
             self.fm.select_file(fd_deq[0])
         elif len(fd_deq) == 1:
             self.fm.select_file(fd_deq[0])
+
+
+#custom commands:
+
+#set wallpaper
+class setwp(Command):
+    # The execute method is called when you run this command in ranger.
+    def execute(self):
+   
+        # self.fm.thisfile is a ranger.container.file.File object and is a
+        # reference to the currently selected file.
+        target_filename = self.fm.thisfile.path
+        self.fm.execute_command("cp " +  target_filename + " /home/chps/.config/wp")
+        self.fm.execute_command("feh --bg-scale ~/.config/wp")
+        self.fm.notify("file: " + target_filename + "!")
+
+

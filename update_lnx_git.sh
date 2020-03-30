@@ -15,5 +15,6 @@ cp -r /home/chps/.config/ranger/* ~/git/lnx/.config/ranger && echo "ranger/ Copi
 echo ""
 echo "Done."
 
+#git add .
 #git commit -a
 #git push origin master
