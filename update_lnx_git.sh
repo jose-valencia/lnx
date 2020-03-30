@@ -5,7 +5,8 @@
 [ ! -d "/home/chps/git/lnx/.config/i3" ] && (mkdir ~/git/lnx/.config/i3 && echo "~/git/lnx/.config/.i3 Created." || echo "Error creating ~/git/lnx/.config/.i3");
 [ ! -d "/home/chps/git/lnx/.config/ranger" ] && (mkdir ~/git/lnx/.config/ranger && echo "~/git/lnx/.config/ranger Created." || echo "Error creating ~/git/lnx/.config/ranger");
 
-cp /home/chps/.bashrc ~/git/lnx/ && echo ".bachrc Copied."
+cp /home/chps/.bashrc ~/git/lnx/ && echo ".bashrc Copied."
+cp /home/chps/.vimrc ~/git/lnx/ && echo ".vimrc Copied."
 cp /home/chps/.Xresources ~/git/lnx/ && echo ".Xresources Copied."
 cp /home/chps/i3blocks.conf ~/git/lnx/ && echo "i3blocks.conf Copied."
 cp /home/chps/.config/compton.conf ~/git/lnx/.config/ && echo "compton.conf Copied." 
