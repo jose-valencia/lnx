@@ -7,7 +7,7 @@ URxvt.letterSpace: -2
 
 !colors
 URxvt.depth: 32
-URxvt.background: [85]#0D121F
+URxvt.background: [90]#11121E
 URxvt*foreground: White
 URxvt*colorUL: yellow
 URxvt*underlineColor: yellow
