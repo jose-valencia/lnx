@@ -93,6 +93,8 @@ alias matrix='cmatrix'
 alias deezer='firefox --class ICE-SSB-deezer --profile /home/chps/.local/share/ice/firefox/deezer --no-remote https://www.deezer.com/en/'
 alias set_wp='/home/chps/git/lnx/set_wp.sh'
 alias update_lnx_git='/home/chps/git/lnx/update_lnx_git.sh'
+alias rg='ranger'
+alias compton='/home/chps/Apps/compton_kawase/compton/compton'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

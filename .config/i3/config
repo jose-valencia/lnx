@@ -165,10 +165,10 @@ mode "resize" {
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        #bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
 
 #custom resize 
 bindsym $mod+$alt+h resize shrink width 10 px or 10 ppt
@@ -181,7 +181,7 @@ bindsym $mod+$alt+Up resize grow height 10 px or 10 ppt
 bindsym $mod+$alt+Down resize shrink height 10 px or 10 ppt
 bindsym $mod+$alt+Right resize grow width 10 px or 10 ppt
 
-
+bindsym $mod+r exec "urxvtcd -e ranger"
 
 #bindsym $mod+$mod1+Left resize shrink width 10 px or 10 ppt
 #bindsym Down resize grow height 10 px or 10 ppt
@@ -242,7 +242,7 @@ exec brave-browser
 exec urxvtcd
 exec_always feh --bg-scale ~/.config/wp
 exec_always copyq
-exec compton
+exec_always /home/chps/Apps/compton_kawase/compton/compton
 exec ulauncher
 
 # enable floating mode for all XTerm windows
