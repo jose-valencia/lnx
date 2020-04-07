@@ -84,6 +84,8 @@ fi
 
 #color man pages
 export PAGER="most"  
+export QT_SCALE_FACTOR=1.5
+export QT_FONT_DPI=96
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -94,7 +96,7 @@ alias deezer='firefox --class ICE-SSB-deezer --profile /home/chps/.local/share/i
 alias set_wp='/home/chps/git/lnx/set_wp.sh'
 alias update_lnx_git='/home/chps/git/lnx/update_lnx_git.sh'
 alias rg='ranger'
-alias compton='/home/chps/Apps/compton_kawase/compton/compton'
+alias compton='killall compton & (sleep 1 && /home/chps/Apps/compton_kawase/compton/compton)'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

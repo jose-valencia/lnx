@@ -134,6 +134,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="Brave-browser"] $ws1
 assign [class="URxvt"] $ws2
 assign [class="ICE-SSB-deezer"] $ws10
+assign [class="Kodi"] $ws8
 assign [class="steam"] $ws9
 
 # reload the configuration file
@@ -242,7 +243,7 @@ exec brave-browser
 exec urxvtcd
 exec_always feh --bg-scale ~/.config/wp
 exec_always copyq
-exec_always /home/chps/Apps/compton_kawase/compton/compton
+exec_always compton
 exec ulauncher
 
 # enable floating mode for all XTerm windows
