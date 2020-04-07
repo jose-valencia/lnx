@@ -1,0 +1,62 @@
+{
+    "bc411e4a-af1e-410f-8f05-64042576506d": {
+        "id": "bc411e4a-af1e-410f-8f05-64042576506d",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1583101977.4240236
+    },
+    "409f747a-18cd-4ded-8ece-c258c2054f12": {
+        "id": "409f747a-18cd-4ded-8ece-c258c2054f12",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "http://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1583101977.4240706
+    },
+    "e6e17090-f5b5-4b69-bc1e-662a8098e37e": {
+        "id": "e6e17090-f5b5-4b69-bc1e-662a8098e37e",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1583101977.4241035
+    },
+    "e779dc1c-5c1e-46c5-b5d6-ce74ad6aece1": {
+        "id": "e779dc1c-5c1e-46c5-b5d6-ce74ad6aece1",
+        "name": "DuckDuckGo",
+        "keyword": "ddg",
+        "cmd": "https://duckduckgo.com/?q=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1584334629.6607046
+    },
+    "2c1ac003-3987-47bd-b7b6-fcbace9af081": {
+        "id": "2c1ac003-3987-47bd-b7b6-fcbace9af081",
+        "name": "compton",
+        "keyword": "comp",
+        "cmd": "killall compton & (sleep 1 && /home/chps/Apps/compton_kawase/compton/compton)",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1586074365.6992168
+    },
+    "41cc080a-3628-4c55-a723-176d7952bcbb": {
+        "id": "41cc080a-3628-4c55-a723-176d7952bcbb",
+        "name": "shut down",
+        "keyword": "sd",
+        "cmd": "init 0",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1586241971.4294956
+    }
+}

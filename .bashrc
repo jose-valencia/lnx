@@ -96,7 +96,7 @@ alias deezer='firefox --class ICE-SSB-deezer --profile /home/chps/.local/share/i
 alias set_wp='/home/chps/git/lnx/set_wp.sh'
 alias update_lnx_git='/home/chps/git/lnx/update_lnx_git.sh'
 alias rg='ranger'
-alias compton='killall compton & (sleep 1 && /home/chps/Apps/compton_kawase/compton/compton)'
+alias compt='killall compton & (sleep 1 && /home/chps/Apps/compton_kawase/compton/compton)'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
