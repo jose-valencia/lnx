@@ -58,5 +58,15 @@
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1586241971.4294956
+    },
+    "5926ac1c-8656-4719-8afa-cd89cdb9b0fa": {
+        "id": "5926ac1c-8656-4719-8afa-cd89cdb9b0fa",
+        "name": "restart",
+        "keyword": "rt",
+        "cmd": "init 6",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1586545488.8309534
     }
 }

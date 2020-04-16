@@ -1,9 +1,10 @@
 !name
 !urxvt*termName:        terminal 
 !fonts
-URxvt.font: xft:Ubuntu Mono:size=20
-URxvt*boldFont: xft:Ubuntu Mono:style=Bold:size=20
+URxvt.font: xft:Ubuntu Mono:size=16
+URxvt*boldFont: xft:Ubuntu Mono:style=Bold:size=16
 URxvt.letterSpace: -2
+URxvt.font-size.step: 4
 
 !colors
 URxvt.depth: 32
@@ -46,8 +47,8 @@ URxvt.iso14755:         False
 !perl extensions
 URxvt.perl-ext-common:  resize-font,eval
 
-!URxvt.keysym.C-Down:  resize-font:smaller
-!URxvt.keysym.C-Up:    resize-font:bigger
+URxvt.keysym.C-Down:  resize-font:smaller
+URxvt.keysym.C-Up:    resize-font:bigger
 !
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard

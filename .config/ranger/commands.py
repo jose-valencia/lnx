@@ -145,6 +145,7 @@ class setwp(Command):
         # reference to the currently selected file.
         target_filename = self.fm.thisfile.path
         self.fm.execute_command("cp " +  target_filename + " /home/chps/.config/wp")
+        self.fm.execute_command("sudo cp " +  target_filename + " /usr/share/backgrounds/xfce/xfce-stripes.png")
         self.fm.execute_command("feh --bg-scale ~/.config/wp")
         self.fm.notify("file: " + target_filename + "!")
 
