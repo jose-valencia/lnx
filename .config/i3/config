@@ -135,6 +135,7 @@ assign [class="Brave-browser"] $ws1
 assign [class="URxvt"] $ws2
 assign [class="ICE-SSB-deezer"] $ws10
 assign [class="Kodi"] $ws8
+assign [class="Steam"] $ws9
 assign [class="steam"] $ws9
 
 # reload the configuration file
@@ -240,7 +241,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo /home/brunomiguel/script
 
 #initial apps
 #exec brave-browser
-exec xrandr --output HDMI-1-1 --mode 1920x1080 --scale 0.7x0.7
+#exec xrandr --output HDMI-1-1 --mode 1920x1080 --scale 0.7x0.7
 exec firefox
 exec urxvtcd
 exec_always feh --bg-scale ~/.config/wp

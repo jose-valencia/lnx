@@ -1,19 +1,26 @@
 #!/bin/sh
-[ ! -d "/home/chps/git" ] && (mkdir ~/git && echo "~/git Created." || echo "Error creating ~/git.");
-[ ! -d "/home/chps/git/lnx" ] && (mkdir ~/git/lnx && echo "~/git/lnx Created." || echo "Error creating ~/git/lnx");
-[ ! -d "/home/chps/git/lnx/.config" ] && (mkdir ~/git/lnx/.config && echo "~/git/lnx/.config Created." || echo "Error creating ~/git/lnx/.config"); 
-[ ! -d "/home/chps/git/lnx/.config/ulauncher" ] && (mkdir ~/git/lnx/.config/ulauncher && echo "~/git/lnx/.config/.ulauncher Created." || echo "Error creating ~/git/lnx/.config/.ulauncher");
-[ ! -d "/home/chps/git/lnx/.config/i3" ] && (mkdir ~/git/lnx/.config/i3 && echo "~/git/lnx/.config/.i3 Created." || echo "Error creating ~/git/lnx/.config/.i3");
-[ ! -d "/home/chps/git/lnx/.config/ranger" ] && (mkdir ~/git/lnx/.config/ranger && echo "~/git/lnx/.config/ranger Created." || echo "Error creating ~/git/lnx/.config/ranger");
+[ ! -d "$HOME/git" ] && (mkdir $HOME/git && echo "$HOME/git Created" || echo "Error creating $HOME/git");
+[ ! -d "$HOME/git/lnx" ] && (mkdir $HOME/git/lnx && echo "$HOME/git/lnx Created." || echo "Error creating $HOME/git/lnx");
+[ ! -d "$HOME/git/lnx/.kodi" ] && (mkdir $HOME/git/lnx/.kodi && echo "$HOME/git/lnx/.kodi Created." || echo "Error creating $HOME/git/lnx/.kodi"); 
+[ ! -d "$HOME/git/lnx/.kodi/userdata" ] && (mkdir $HOME/git/lnx/.kodi/userdata && echo "$HOME/git/lnx/.kodi/userdata Created." || echo "Error creating $HOME/git/lnx/.kodi/userdata"); 
+[ ! -d "$HOME/git/lnx/.kodi/userdata/keymaps" ] && (mkdir $HOME/git/lnx/.kodi/userdata/keymaps && echo "$HOME/git/lnx/.kodi/userdata/keymaps Created." || echo "Error creating $HOME/git/lnx/.kodi/userdata/keymaps"); 
+[ ! -d "$HOME/git/lnx/.config" ] && (mkdir $HOME/git/lnx/.config && echo "$HOME/git/lnx/.config Created." || echo "Error creating $HOME/git/lnx/.config"); 
+[ ! -d "$HOME/git/lnx/.config/ulauncher" ] && (mkdir $HOME/git/lnx/.config/ulauncher && echo "$HOME/git/lnx/.config/.ulauncher Created." || echo "Error creating $HOME/git/lnx/.config/.ulauncher");
+[ ! -d "$HOME/git/lnx/.config/i3" ] && (mkdir $HOME/git/lnx/.config/i3 && echo "$HOME/git/lnx/.config/.i3 Created." || echo "Error creating $HOME/git/lnx/.config/.i3");
+[ ! -d "$HOME/git/lnx/.config/ranger" ] && (mkdir $HOME/git/lnx/.config/ranger && echo "$HOME/git/lnx/.config/ranger Created." || echo "Error creating $HOME/git/lnx/.config/ranger");
 
-cp /home/chps/.bashrc ~/git/lnx/ && echo ".bashrc Copied."
-cp /home/chps/.vimrc ~/git/lnx/ && echo ".vimrc Copied."
-cp /home/chps/.Xresources ~/git/lnx/ && echo ".Xresources Copied."
-cp /home/chps/i3blocks.conf ~/git/lnx/ && echo "i3blocks.conf Copied."
-cp /home/chps/.config/compton.conf ~/git/lnx/.config/ && echo "compton.conf Copied." 
-cp -r /home/chps/.config/ulauncher/* ~/git/lnx/.config/ulauncher/ && echo "ulauncher/ Copied." 
-cp -r /home/chps/.config/i3/* ~/git/lnx/.config/i3/ && echo "i3/ Copied." 
-cp -r /home/chps/.config/ranger/* ~/git/lnx/.config/ranger && echo "ranger/ Copied." 
+cp $HOME/.bashrc $HOME/git/lnx/ && echo ".bashrc Copied."
+cp $HOME/.vimrc $HOME/git/lnx/ && echo ".vimrc Copied."
+cp $HOME/.Xresources $HOME/git/lnx/ && echo ".Xresources Copied."
+cp $HOME/i3blocks.conf $HOME/git/lnx/ && echo "i3blocks.conf Copied."
+cp $HOME/.config/compton.conf $HOME/git/lnx/.config/ && echo "compton.conf Copied." 
+
+
+cp -r $HOME/.config/ulauncher/* $HOME/git/lnx/.config/ulauncher/ && echo "ulauncher/ Copied." 
+cp -r $HOME/.config/i3/* $HOME/git/lnx/.config/i3/ && echo "i3/ Copied." 
+cp -r $HOME/.config/ranger/* $HOME/git/lnx/.config/ranger && echo "ranger/ Copied." 
+cp -r $HOME/.kodi/userdata/keymaps/* $HOME/git/lnx/.kodi/userdata/keymaps/ && echo "kodi/keympas/ Copied." 
+cp -r $HOME/.kodi/userdata/*.xml $HOME/git/lnx/.kodi/userdata/ && echo "kodi/ Copied." 
 echo ""
 echo "Done."
 
