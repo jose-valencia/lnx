@@ -10,6 +10,7 @@
 [ ! -d "$HOME/git/lnx/.config/ranger" ] && (mkdir $HOME/git/lnx/.config/ranger && echo "$HOME/git/lnx/.config/ranger Created." || echo "Error creating $HOME/git/lnx/.config/ranger");
 
 cp $HOME/.bashrc $HOME/git/lnx/ && echo ".bashrc Copied."
+cp $HOME/.conkyrc $HOME/git/lnx/ && echo ".conkyrc Copied."
 cp $HOME/.vimrc $HOME/git/lnx/ && echo ".vimrc Copied."
 cp $HOME/.Xresources $HOME/git/lnx/ && echo ".Xresources Copied."
 cp $HOME/i3blocks.conf $HOME/git/lnx/ && echo "i3blocks.conf Copied."

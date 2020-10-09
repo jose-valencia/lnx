@@ -19,6 +19,7 @@
         <lockvideo>false</lockvideo>
         <lockpictures>false</lockpictures>
         <lockprograms>false</lockprograms>
+        <lockgames>false</lockgames>
         <lockmode>0</lockmode>
         <lockcode></lockcode>
         <lastdate></lastdate>
