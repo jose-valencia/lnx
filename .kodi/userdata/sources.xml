@@ -19,15 +19,30 @@
             <path pathversion="1">/media/MOON/VDS/OTH/</path>
             <allowsharing>true</allowsharing>
         </source>
+        <source>
+            <name>007.James.Bond.Complete.Set.1962-2015.720p.BluRay.x264-ETRG</name>
+            <path pathversion="1">/media/MOON/VDS/MVS/007.James.Bond.Complete.Set.1962-2015.720p.BluRay.x264-ETRG/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </video>
     <music>
         <default pathversion="1"></default>
+        <source>
+            <name>Witcher</name>
+            <path pathversion="1">/media/MOON/GAMEs/Witcher/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </music>
     <pictures>
         <default pathversion="1"></default>
     </pictures>
     <files>
         <default pathversion="1"></default>
+        <source>
+            <name>MVS</name>
+            <path pathversion="1">/media/MOON/VDS/MVS/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </files>
     <games>
         <default pathversion="1"></default>

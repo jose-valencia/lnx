@@ -14,7 +14,7 @@ set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Dingbats 10
+font pango:Dingbats 16
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -37,7 +37,8 @@ bindsym $mod+Return exec urxvtcd
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Dingbats 21:regular:pixelsize=21' -nb '#2f343f' -p '>' -sb '#00f4f5' -sf '#000000'
+bindsym $mod+d exec dmenu_run -fn 'Dingbats 18:regular:pixelsize=18' -nb '#2f343f' -p '>' -sb '#00f4f5' -sf '#000000'
+bindsym ctrl+space exec dmenu_run -fn 'Dingbats 18:regular:pixelsize=18' -nb '#2f343f' -p '>' -sb '#00f4f5' -sf '#000000'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -95,8 +96,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
+set $ws1 "1"
+set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -190,6 +191,8 @@ bindsym $mod+r exec "urxvtcd -e ranger"
 #bindsym Up resize shrink height 10 px or 10 ppt
 #bindsym Right resize grow width 10 px or 10 ppt
 
+bindsym $mod1+space exec dmenu_run
+bindsym $mod+Shift+s sticky toggle
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
@@ -232,8 +235,12 @@ workspace_auto_back_and_forth yes
 
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga && --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga && --no-startup-id pactl set-sink-volume 0 +5% #decrease sound volume
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga && --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga && --no-startup-id pactl set-sink-volume 0 +5% #decrease sound volume
+
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && mplayer /usr/share/sounds/LinuxMint/stereo/button-pressed.ogg
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && mplayer /usr/share/sounds/LinuxMint/stereo/button-pressed.ogg
+
 bindsym XF86AudioMute exec  ((mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga) && (pactl set-sink-mute 0 toggle) && (mplayer /usr/share/sounds/Pop/stereo/action/audio-volume-change.oga)) # mute sound
 
 #Brightness Control
@@ -242,12 +249,16 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo /home/brunomiguel/script
 #initial apps
 #exec brave-browser
 #exec xrandr --output HDMI-1-1 --mode 1920x1080 --scale 0.7x0.7
+#exec xrandr --output eDP-1-1 --off
 exec firefox
 exec urxvtcd
-exec_always feh --bg-scale ~/.config/wp
+exec_always feh --bg-scale /usr/share/backgrounds/wp
 exec_always copyq
-exec /home/chps/Apps/compton_kawase/compton/compton
-exec ulauncher
+exec compton
+exec guake
+#exec /home/chps/Apps/compton_kawase/compton/compton
+#exec ulauncher
 
 # enable floating mode for all XTerm windows
 for_window [class="feh"] floating enable
+

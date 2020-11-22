@@ -97,6 +97,9 @@ alias aptUI='sudo aptitude update && sudo aptitude install'
 alias aptS='aptitude search'
 alias aptUS='sudo aptitude update && aptitude search'
 alias aptI='sudo aptitude install'
+alias set_wp='/home/chps/git/lnx/set_wp.sh'
+alias rg='ranger'
+alias joplin='~/.joplin/Joplin.AppImage'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

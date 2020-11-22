@@ -1,8 +1,8 @@
 !name
 !urxvt*termName:        terminal 
 !fonts
-URxvt.font: xft:Ubuntu Mono:size=16
-URxvt*boldFont: xft:Ubuntu Mono:style=Bold:size=16
+URxvt.font: xft:Monospace:size=25
+URxvt*boldFont: xft:Monospace:style=Bold:size=25
 URxvt.letterSpace: -2
 URxvt.font-size.step: 4
 
