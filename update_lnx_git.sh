@@ -15,7 +15,7 @@ cp $HOME/.vimrc $HOME/git/lnx/ && echo ".vimrc Copied."
 cp $HOME/.Xresources $HOME/git/lnx/ && echo ".Xresources Copied."
 cp $HOME/i3blocks.conf $HOME/git/lnx/ && echo "i3blocks.conf Copied."
 cp $HOME/.config/compton.conf $HOME/git/lnx/.config/ && echo "compton.conf Copied." 
-
+cp $HOME/Documents/move-to-next-monitor $HOME/git/lnx/move-to-next-monitor && echo "move-to-next-monitor Copied."
 
 cp -r $HOME/.config/ulauncher/* $HOME/git/lnx/.config/ulauncher/ && echo "ulauncher/ Copied." 
 cp -r $HOME/.config/i3/* $HOME/git/lnx/.config/i3/ && echo "i3/ Copied." 

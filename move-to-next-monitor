@@ -50,6 +50,7 @@ fi
 
 # Move the window
 xdotool windowmove $window_id $new_x $y
+xdotool mousemove -w $window_id 960 520
 
 # Maximize window again, if it was before
 echo "state: ${window_state}"
