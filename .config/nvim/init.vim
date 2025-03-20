@@ -35,7 +35,7 @@ call plug#end()
 
 " Colorscheme setup
 syntax enable
-colorscheme gruvbox
+colorscheme vim
 set background=dark
 
 " Treesitter configuration
@@ -91,6 +91,20 @@ let g:compe.auto_complete = v:true
 let g:compe.preselect = 'enable'
 let g:compe.source = {'path': v:true, 'buffer': v:true, 'nvim_lsp': v:true}
 
+" Autocomplete key mappings
+" Trigger autocomplete
+inoremap <silent><expr> <C-Space> compe#complete()  " Trigger autocompletion manually
+
+" Accept completion
+inoremap <silent><expr> <C-y> compe#confirm('<CR>')  " Accept completion with <C-y>
+
+" Close autocomplete menu
+inoremap <silent><expr> <C-e> compe#close()  " Close the autocomplete menu
+
+" Navigate completion items
+inoremap <silent><expr> <C-n> compe#scroll({ 'delta': 1 })  " Move to next completion item
+inoremap <silent><expr> <C-p> compe#scroll({ 'delta': -1 })  " Move to previous completion item
+
 " Key mappings for NERDTree
 map <C-n> :NERDTreeToggle<CR>  " Toggle file explorer with Ctrl + n
 
@@ -102,6 +116,7 @@ map <C-b> :Buffers<CR>  " Search buffers with Ctrl + b
 nnoremap <C-s> :w<CR>  " Save with Ctrl+S
 nnoremap <C-q> :q<CR>  " Quit with Ctrl+Q
 nnoremap <M-q> :q!<CR>    "Quit without saving Alt+Q
+nnoremap <C-b> :browse oldfiles<CR> "old files
 
 " Airline settings (status line)
 let g:airline_powerline_fonts = 1
@@ -126,5 +141,6 @@ augroup END
 " Enable syntax highlighting for .vim files
 augroup vim_syntax
   autocmd!
-  autocmd BufNewFile,BufRead *.vim setlocal filetype=vim
+  autocmd BufNewFile,BufRead *.* setlocal filetype=vim
 augroup END
+
